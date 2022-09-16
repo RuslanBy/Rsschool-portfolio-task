@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Serif Pro', serif;
+    background-color: black;
+    color: white;
+}
+header {
+    border-bottom: 5px solid rgb(211, 141, 12);
+}
+.container {
+    width: 95%;
+    margin: auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.nav h2 {
+    font-size: 30px;
+}
+.search {
+    position: relative;
+    width: 380px;
+}
+.search input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 35px;
+    outline: none;
+}
+.search i {
+    color:black;
+    position: absolute;
+    top:25%;
+    right: 3%;
+    transition: 1s;
+}
+.search i:hover {
+    color: rgb(211, 141, 12);
+}
+.images {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.img {
+    width: 350px;
+    height: 200px;
+    margin-top: 15px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.footer-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+}
+.year {
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+.github {
+
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.github:hover {
+    color: #BDAE82;
+}
+.rs-school-link {
+    font-size: 20px;
+    line-height: 50px;
+    /* identical to box height, or 250% */
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.rs-school-link:hover {
+    color: #BDAE82;
+}
+.content {
+    min-height: calc(100vh - 80px);
+}
+@media (max-width: 333px) {
+    .footer-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 150px;
+        align-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px) {
+    .footer-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 150px;
+        align-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .nav {
+        justify-content: center;
+    }
+}
